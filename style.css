@@ -1,0 +1,31 @@
+:root{
+  --accent:#003366;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter, Arial, sans-serif;
+  margin:0;
+  background:#f3f4f6;
+  color:#111827;
+  line-height:1.45;
+}
+.container{max-width:980px;margin:0 auto;padding:20px}
+.site-header{background:var(--accent);color:#fff;padding:18px 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-header h1{margin:0;font-size:1.1rem}
+.site-header nav a{color:#fff;margin-left:14px;text-decoration:none}
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:40px 20px}
+.profile{width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.contacts p{margin:.35rem 0;color:var(--muted)}
+.btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;margin:.5rem}
+.btn.ghost{background:transparent;border:2px solid var(--accent);color:var(--accent)}
+.resume .section{background:#fff;padding:18px;margin:14px 0;border-radius:8px}
+.biodata-table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden}
+.biodata-table td{padding:12px;border-bottom:1px solid #e6e6e6}
+.small-note{font-size:.9rem;color:var(--muted);margin-top:12px}
+.site-footer{padding:14px 0;text-align:center;color:var(--muted)}
+@media(min-width:800px){
+  .hero{flex-direction:row;text-align:left;gap:24px}
+  .hero .contacts{margin-left:20px}
+}
